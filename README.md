@@ -17,5 +17,7 @@ Test with free APIs, malbaz, haus etc.
 Test with multiple and format the data as required.
 
 https://www.splunk.com/en_us/blog/security/do-not-cross-the-redline-stealer-detections-and-analysis.html
+As seen below, and mentioned once or twice, heavy inspiration taken from Splunk's team:
+
 <img width="439" alt="image" src="https://github.com/KynanJones0110/Variant-Watcher/assets/71669145/acde6faa-5750-4352-98f0-fa8274382d66">
-\nWith the above, practice on pulling relevant data from the site as needed.
+
