@@ -10,7 +10,7 @@ For now, it will aggregate a count of domains seen (top 20) from a variant.
 Issues - Naming conventions, such as 'Red Line' -> 'RedLine' if present, will skew results. Will look at formatting the data prior to user input.
 # To do
 
-- Add in relevant API calls to pull info in general.
+- Add in relevant API calls to pull info in general. (Possible just strip out core logic and rework and utilize this as a 90 day datset parser)
 - Add in filter to specify what family/variant you would like to request IOCs on such as 
 - Inputting Redline = 
 -   Pulls top domains seen in last x days
