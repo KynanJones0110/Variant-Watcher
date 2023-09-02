@@ -1,6 +1,9 @@
 # Variant-Watcher
 Notebook to aggregate data from a target Malware Variant. Currently, this is purely from URLhaus' dataset, the intention is to get as much data for the variant in question as possible, which will definitely require a total rework. This is my first project using Jupyter and really dabbling with anything like this using Python.
 
+For now, it will aggregate a count of domains seen (top 20) from a variant.
+
+Issues - Naming conventions, such as 'Red Line' -> 'RedLine' if present, will skew results. Will look at formatting the data prior to user input.
 # To do
 
 - Add in relevant API calls to pull info in general.
