@@ -1,5 +1,5 @@
 # Variant-Watcher
-https://cdn.discordapp.com/attachments/1098427324019507385/1147572780380999770/empise_Malware_Variant_Watcher_logo_f24b2355-522e-42da-8278-68cd0593c87b.png
+![https://cdn.discordapp.com/attachments/1098427324019507385/1147572780380999770/empise_Malware_Variant_Watcher_logo_f24b2355-522e-42da-8278-68cd0593c87b.png]
 (Testing with data ingestion, due URLhaus' API only containing up to 3 days worth of entries, it seemed more appropriate (and going of Splunk's example) to utilize their 90 day dataset of URLs which come with tags to link them to associated variants, RedLine for example.
 
 https://urlhaus-api.abuse.ch/ \
@@ -22,4 +22,5 @@ Test with multiple and format the data as required.
 
 Massive inspiration taken from Splunk's Threat Hunting Team's JN:
 https://www.splunk.com/en_us/blog/security/do-not-cross-the-redline-stealer-detections-and-analysis.html
+![empise_Malware_Variant_Watcher_logo_f24b2355-522e-42da-8278-68cd0593c87b](https://github.com/KynanJones0110/Variant-Watcher/assets/71669145/4b696454-cb9c-4673-8045-8ed9e2e8f974)
 
