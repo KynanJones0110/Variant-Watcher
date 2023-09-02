@@ -1,5 +1,5 @@
 # Variant-Watcher
-!(https://cdn.discordapp.com/attachments/1098427324019507385/1147572780380999770/empise_Malware_Variant_Watcher_logo_f24b2355-522e-42da-8278-68cd0593c87b.png)
+!(test)(https://cdn.discordapp.com/attachments/1098427324019507385/1147572780380999770/empise_Malware_Variant_Watcher_logo_f24b2355-522e-42da-8278-68cd0593c87b.png)
 (Testing with data ingestion, due URLhaus' API only containing up to 3 days worth of entries, it seemed more appropriate (and going of Splunk's example) to utilize their 90 day dataset of URLs which come with tags to link them to associated variants, RedLine for example.
 
 https://urlhaus-api.abuse.ch/ \
