@@ -1,6 +1,7 @@
 # Variant-Watcher
 
-(Testing with data ingestion, will poke with URLHaus API further soon:) )
+(Testing with data ingestion, due URLhaus' API only containing up to 3 days worth of entries, it seemed more appropriate (and going of Splunk's example) to utilize their 90 day dataset of URLs which come with tags to link them to associated variants, RedLine for example.
+
 https://urlhaus-api.abuse.ch/
 Notebook to aggregate data from a target Malware Variant. Currently, this is purely from URLhaus' dataset, the intention is to get as much data for the variant in question as possible, which will definitely require a total rework. This is my first project using Jupyter and really dabbling with anything like this using Python.
 
