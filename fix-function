@@ -1,0 +1,39 @@
+skip = 7
+def skip_handler(skip):
+
+    # Open the file and skip the first 'skip' lines (Due to the header provided, definitely an easier way to do, will look into it)
+    try:
+        with open(raw_pulled_data, 'r', encoding='utf-8') as file:
+            for _ in range(skip):
+                next(file)  # Skip the line
+            # Read the remaining content into a new file
+            temp_file_path = 'temp_content.txt'
+            with open(temp_file_path, 'w', encoding='utf-8') as temp_file:
+                temp_file.writelines(file)
+    except Exception as e:
+        print(e)  
+skip_handler(skip)
+
+
+
+try:
+    df = pd.read_csv(temp_file_path, usecols=['url', 'tags', 'threat'])
+    # Drop rows with missing tags (yeet errors)
+    df = df.dropna(subset=['tags']) 
+except ValueError:
+    #function this
+    print("lmao")
+    skip +=1
+    skip_handler(skip)
+    # Open the file and skip the first 'skip' lines (Due to the header provided, definitely an easier way to do, will look into it)
+    with open(raw_pulled_data, 'r', encoding='utf-8') as file:
+        for _ in range(skip):
+            next(file)  # Skip the line
+
+        # Read the remaining content into a new file
+        temp_file_path = 'temp_content.txt'
+        with open(temp_file_path, 'w', encoding='utf-8') as temp_file:
+            temp_file.writelines(file) 
+    df = pd.read_csv(temp_file_path, usecols=['url', 'tags', 'threat'])
+    # Drop rows with missing tags (yeet errors)
+    df = df.dropna(subset=['tags']) 
